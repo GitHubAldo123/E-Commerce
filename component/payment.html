@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="E-commerce website">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, TailwindCSS, E-commerce">
+    <meta name="Author" content="Aldo">
+    <link rel="stylesheet" href="js/payment.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>E-Commerce payment</title>
+</head>
+<body class="bg-gray-100">
+            <!-- Payment Section -->
+    <section class="container px-4 mx-auto my-16">
+        <h2 class="mb-8 text-3xl font-bold text-center text-gray-800">Payment Information</h2>
+        <div class="max-w-xl p-8 mx-auto bg-white rounded-lg shadow-lg">
+            <form id="payment-form">
+                <div class="mb-4">
+                    <label for="card-number" class="block text-gray-700">Card Number</label>
+                    <input type="text" id="card-number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="expiry-date" class="block text-gray-700">Expiry Date</label>
+                    <input type="text" id="expiry-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="MM/YY" required>
+                </div>
+                <div class="mb-4">
+                    <label for="cvv" class="block text-gray-700">CVV</label>
+                    <input type="text" id="cvv" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="card-holder" class="block text-gray-700">Card Holder Name</label>
+                    <input type="text" id="card-holder" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="amount" class="block text-gray-700">Amount</label>
+                    <input type="text" id="amount" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <button type="submit" class="w-full px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"><a href="../index.html">Pay Now</a></button>
+            </form>
+            <div id="success-message" class="hidden p-4 mt-4 text-center text-white bg-green-500 rounded-lg">
+                Payment Successful! Redirecting to dashboard...
+            </div>
+        </div>
+</body>
+</html>

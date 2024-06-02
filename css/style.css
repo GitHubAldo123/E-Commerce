@@ -1,0 +1,27 @@
+.navbar-custom {
+      background-color: #343a40;
+    }
+    .navbar-custom .nav-link {
+      color: #fff;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #ddd;
+    }
+    .navbar-custom .btn-link {
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar-custom .btn-link:hover {
+      color: #ddd;
+    }
+    .navbar-custom .form-control {
+      border-radius: 0;
+    }
+    .navbar-custom .btn-outline-success {
+      border-color: #fff;
+      color: #fff;
+    }
+    .navbar-custom .btn-outline-success:hover {
+      background-color: #fff;
+      color: #343a40;
+    }
